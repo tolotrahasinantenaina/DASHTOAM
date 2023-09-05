@@ -1,7 +1,7 @@
 from asyncio import LimitOverrunError
 from ctypes import alignment
-#from tkinter import INSIDE
-from turtle import color, filling, width
+
+#from turtle import color, filling, width
 from unicodedata import name
 import dash
 #import dash_table
@@ -26,8 +26,8 @@ server=app.server
 DOUANE_LOGO = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdMAssJmAtnUVyh4Lr_EeQvuHgh6n__V9q8cBOMb_AFg&s"
 dash_data=pd.read_excel(r'D:\Dash_21TO\DASH_21TO.xlsx',sheet_name='2023')
 dash_data_1=pd.read_excel(r'D:\Dash_21TO\DASH_21TO.xlsx',sheet_name='2022')
-tab_data=pd.read_excel(r'D:\Dash_21TO\21TO\DASH_21TO.xlsx',sheet_name='EXO')
-tab_ind=pd.read_excel(r'D:\Dash_21TO\21TO\DINDI.xlsx')
+tab_data=pd.read_excel(r'D:\Dash_21TO\DASH_21TO.xlsx',sheet_name='EXO')
+tab_ind=pd.read_excel(r'D:\Dash_21TO\DINDI.xlsx')
 #tab_rea=pd.read_excel(r'C:\Users\0003\Documents\Pratique_python\21TO\DINDI.xlsx',sheet_name='REA')
 #tab_del=pd.read_excel(r'C:\Users\0003\Documents\Pratique_python\21TO\DINDI.xlsx',sheet_name='DEL')
 tab_21TO=tab_ind.query("DIV=='21TO'")
