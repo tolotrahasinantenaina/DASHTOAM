@@ -24,10 +24,10 @@ from dash.dash_table.Format import Group
 app = dash.Dash(external_stylesheets = [ dbc.themes.FLATLY],)
 server=app.server
 DOUANE_LOGO = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdMAssJmAtnUVyh4Lr_EeQvuHgh6n__V9q8cBOMb_AFg&s"
-dash_data=pd.read_excel('https://github.com/tolotrahasinantenaina/DASHTOAM/blob/main/DASH_21TO.xlsx',sheet_name='2023')
-dash_data_1=pd.read_excel('https://github.com/tolotrahasinantenaina/DASHTOAM/blob/main/DASH_21TO.xlsx',sheet_name='2022')
-tab_data=pd.read_excel('https://github.com/tolotrahasinantenaina/DASHTOAM/blob/main/DASH_21TO.xlsx',sheet_name='EXO')
-tab_ind=pd.read_excel('https://github.com/tolotrahasinantenaina/DASHTOAM/blob/main/DINDI.xlsx')
+dash_data=pd.read_excel('https://github.com/tolotrahasinantenaina/DASHTOAM/blob/main/DASH_21TO.xlsx',sheet_name='2023',engine='openpyxl')
+dash_data_1=pd.read_excel('https://github.com/tolotrahasinantenaina/DASHTOAM/blob/main/DASH_21TO.xlsx',sheet_name='2022',engine='openpyxl')
+tab_data=pd.read_excel('https://github.com/tolotrahasinantenaina/DASHTOAM/blob/main/DASH_21TO.xlsx',sheet_name='EXO',engine='openpyxl')
+tab_ind=pd.read_excel('https://github.com/tolotrahasinantenaina/DASHTOAM/blob/main/DINDI.xlsx',engine='openpyxl')
 #tab_rea=pd.read_excel(r'C:\Users\0003\Documents\Pratique_python\21TO\DINDI.xlsx',sheet_name='REA')
 #tab_del=pd.read_excel(r'C:\Users\0003\Documents\Pratique_python\21TO\DINDI.xlsx',sheet_name='DEL')
 tab_21TO=tab_ind.query("DIV=='21TO'")
